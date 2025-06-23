@@ -272,6 +272,24 @@ body {
 .tsection .product__img {
   width: 400px;
 }
+.tsection .product__feedback-img {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.tsection .product__fbimg {
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+}
+.tsection .product__paragraph {
+  width: 350px;
+  font-size: 16px;
+}
+.tsection .product__mini-img {
+  display: flex;
+  gap: 10px;
+}
 @media screen and (max-width: 850px) {
   .tsection .product {
     padding: 0 20px;
