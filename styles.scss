@@ -12,8 +12,9 @@
     background-color: #F2CEDA;
     .nav{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
 
         &__img{
             max-width: 60px;
@@ -51,7 +52,7 @@
             display: none;
         }
     }
-    @media screen and (max-width:985px) {
+    @media(max-width:606px) {
         .nav {
             padding: 0 10px;
             display: flex;
@@ -68,22 +69,21 @@
         }
     }
 }
-.main__container{
-    max-width: 1250px;
-    margin: 0 auto;
-}
+
 
 .main{
     background-color: #F2CEDA;
     .hero{
         display: flex;
+        justify-content: center;
         gap: 100px;
         &__text{
             display: flex;
             flex-direction: column;
             gap: 10px;
             padding-top: 50px;
-            padding-left: 180px;
+            padding: 0 20px;
+            // padding-left: 180px;
         }
         &__p{
             font-size: 14px;
@@ -106,12 +106,16 @@
             cursor: pointer;
         }
     }
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: 870px) {
         .hero{
-            display: block;
+            flex-wrap: wrap;
             padding: 0 20px;
             &__text{
                 padding-left: 40px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             &__p{
                 font-size: 10px;
@@ -125,15 +129,25 @@
             }
             &__btn{
                 width: 150px;
+
+            }
+            &__image{
+                width: 370px;
+            }
+            &__img{
+              width: 100%;
+            }
+        }
+    }
+    @media (max-width:400px) {
+        .hero{
+            &__image{
+                width: 300px;
             }
         }
     }
 }
 
-.section-ctr{
-    max-width: 1250px;
-    margin: 0 auto;
-}
 .section{
     background-color: white;
     .delivery{
@@ -141,11 +155,9 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         gap: 30px;
-        padding: 50px 140px;
     
         &__box{
             background-color: white;
-            max-width: 200px;
             text-align: center;
             padding: 10px;
         }
@@ -163,11 +175,6 @@
             color: rgb(84, 82, 82);
         }
     }
-}
-
-.ssection-ctr{
-    max-width: 1250px;
-    margin: 0 auto;
 }
 
 .ssection{
@@ -204,6 +211,7 @@
         .details{
             padding:30px 50px;
             display: block;
+            text-align: center;
         }
     }
 }
